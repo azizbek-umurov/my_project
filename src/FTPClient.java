@@ -3,7 +3,7 @@ import java.io.*;
 
 class FTPClient{
     public static void main(String args[]) throws Exception{
-        Socket soc=new Socket("127.0.0.1",8888);
+        Socket soc=new Socket("127.0.0.1",9875);
         transferfileClient t=new transferfileClient(soc);
         t.displayMenu();
     }

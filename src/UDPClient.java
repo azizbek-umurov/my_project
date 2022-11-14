@@ -14,7 +14,7 @@ class Client
         String sentence = inFromUser.readLine();
         sendData = sentence.getBytes();
         DatagramPacket sendPacket = new DatagramPacket(sendData,
-                sendData.length, IPAddress, 9876);
+                sendData.length, IPAddress, 9875);
         clientSocket.send(sendPacket);
         DatagramPacket receivePacket = new
                 DatagramPacket(receiveData, receiveData.length);
