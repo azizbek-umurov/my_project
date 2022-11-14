@@ -75,6 +75,7 @@ class transferfileClient{
     void ReceiveFile() throws Exception
     {
         String fileName;
+
         System.out.print("Введите название файла :");
         fileName=br.readLine();
         dout.writeUTF(fileName);
